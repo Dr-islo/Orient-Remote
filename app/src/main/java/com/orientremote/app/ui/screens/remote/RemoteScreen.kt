@@ -1,3 +1,5 @@
+@file:OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
+
 package com.orientremote.app.ui.screens.remote
 
 import androidx.compose.foundation.layout.Arrangement

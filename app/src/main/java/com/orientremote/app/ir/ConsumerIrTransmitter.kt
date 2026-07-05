@@ -23,11 +23,11 @@ class ConsumerIrTransmitter @Inject constructor(
         context.getSystemService(Context.CONSUMER_IR_SERVICE) as? ConsumerIrManager
 
     override val hasIrEmitter: Boolean
-        get() = irManager?.hasIrEmitter == true
+        get() = irManager?.hasIrEmitter() == true
 
     override fun transmit(code: IrCode): IrTransmissionResult {
         val manager = irManager ?: return IrTransmissionResult.NoIrHardware
-        if (!manager.hasIrEmitter) return IrTransmissionResult.NoIrHardware
+        if (!manager.hasIrEmitter()) return IrTransmissionResult.NoIrHardware
 
         return try {
             manager.transmit(code.carrierFrequencyHz, code.pattern)
