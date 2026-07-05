@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Orient Remote</string>
+
+    <!-- Onboarding -->
+    <string name="welcome_title">Welcome to Orient Remote</string>
+    <string name="welcome_body">This app controls Orient TVs using your phone\'s IR blaster.</string>
+    <string name="welcome_cta">Get Started</string>
+    <string name="select_brand_title">Select Brand</string>
+    <string name="brand_orient">Orient</string>
+    <string name="code_search_title">Automatic IR Code Search</string>
+    <string name="code_search_progress">Testing Code %1$d of %2$d</string>
+    <string name="code_search_prompt">Press the Power button below.\nDid your TV respond?</string>
+    <string name="code_search_yes">Yes, it worked</string>
+    <string name="code_search_no">No response</string>
+    <string name="code_search_success_title">TV Connected!</string>
+    <string name="code_search_success_body">Your Orient TV profile has been saved.</string>
+    <string name="code_search_exhausted_title">No matching code found</string>
+    <string name="code_search_exhausted_body">We tried every known Orient code. You can retry or check that your phone is pointed at the TV.</string>
+
+    <!-- No IR hardware -->
+    <string name="no_ir_title">Infrared Not Supported</string>
+    <string name="no_ir_body">This device does not contain an infrared transmitter.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_tv_brand">TV Brand</string>
+    <string name="settings_code_number">IR Code Profile</string>
+    <string name="settings_retest">Retest Remote</string>
+    <string name="settings_reset">Reset Pairing</string>
+    <string name="settings_vibration">Vibration</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_button_size">Button Size</string>
+    <string name="settings_animation_speed">Animation Speed</string>
+    <string name="settings_about">About</string>
+    <string name="settings_privacy">Privacy Policy</string>
+    <string name="settings_version">Version</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_system">Follow System</string>
+
+    <!-- Privacy -->
+    <string name="privacy_body">Orient Remote works completely offline. It does not use the internet, collect data, track usage, or show ads. All IR codes and settings stay on your device.</string>
+</resources>
