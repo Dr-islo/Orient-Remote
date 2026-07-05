@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required to transmit IR signals via the built-in IR blaster -->
+    <uses-permission android:name="android.permission.TRANSMIT_IR" />
+    <!-- Used only for local haptic feedback on button press, can be disabled in Settings -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Declares that IR hardware is required for this app to function -->
+    <uses-feature
+        android:name="android.hardware.consumerir"
+        android:required="true" />
+
+    <application
+        android:name=".OrientRemoteApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrientRemote"
+        android:hardwareAccelerated="true"
+        tools:targetApi="34"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.OrientRemote">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
